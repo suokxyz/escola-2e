@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>curiosidades de jatos supersonicos </title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0b0b0b;
+    color:#eaeaea;
+    line-height:1.8;
+}
+
+/* MENU */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#111;
+    border-bottom:2px solid #b30000;
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    list-style:none;
+    padding:18px;
+}
+
+nav a{
+    color:#b30000; /* vermelho normal */
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffffff; /* branco neon */
+    text-shadow:0 0 10px #fff;
+}
+
+/* HERO */
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 20px 80px;
+    background:#0b0b0b;
+}
+
+.hero-box{
+    max-width:900px;
+    padding:45px;
+    border-radius:12px;
+    background:#111;
+    border:1px solid #b30000;
+    box-shadow:0 0 20px rgba(179,0,0,.3);
+}
+
+h1{
+    font-size:3.2rem;
+    color:#ffffff;
+    text-shadow:0 0 8px #fff;
+    margin-bottom:15px;
+}
+
+/* SEÇÕES */
+section{
+    padding:80px 10%;
+}
+
+/* CARD estilo e-book */
+.card{
+    background:#111;
+    border-left:4px solid #b30000;
+    border-radius:10px;
+    padding:30px;
+    margin-bottom:25px;
+    border:1px solid rgba(255,255,255,.05);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 15px rgba(179,0,0,.2);
+}
+
+.card h2{
+    color:#ffffff;
+    margin-bottom:12px;
+    text-shadow:0 0 6px #fff;
+}
+
+p{
+    color:#d6d6d6;
+}
+
+/* TIMELINE */
+.timeline{
+    border-left:3px solid #b30000;
+    padding-left:25px;
+}
+
+.timeline h3{
+    color:#ffffff;
+    text-shadow:0 0 5px #fff;
+}
+
+/* GALERIA */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:18px;
+}
+
+.gallery img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 15px rgba(255,255,255,.2);
+}
+
+/* TABELA */
+table{
+    width:100%;
+    border-collapse:collapse;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+th{
+    background:#b30000;
+    color:#fff;
+    text-transform:uppercase;
+}
+
+td{
+    background:#0f0f0f;
+    color:#eaeaea;
+}
+
+th,td{
+    padding:14px;
+    border:1px solid rgba(255,255,255,.08);
+    text-align:center;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:40px;
+    background:#0a0a0a;
+    border-top:1px solid #b30000;
+    color:#aaa;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="#resumo">Resumo</a></li>
+<li><a href="#historia">História</a></li>
+<li><a href="#boom">Boom Sônico</a></li>
+<li><a href="#galeria">Galeria</a></li>
+<li><a href="#velocidades">Velocidades</a></li>
+</ul>
+</nav>
+
+<header class="hero">
+
+<div class="hero-box">
+
+<h1>jatos supersonicos</h1>
+
+<p>
+5 curiosidades de jatos 
+</p>
+
+</div>
+
+</header>
+
+<section id="resumo">
+
+<div class="card">
+<h2>O que são jatos supersônicos?</h2>
+<p>
+São aeronaves capazes de voar acima da velocidade do som (Mach 1),
+utilizando motores e designs aerodinâmicos avançados.
+</p>
+</div>
+
+<div class="card">
+<h2>Velocidade do Som</h2>
+<p>
+Aproximadamente 1.235 km/h ao nível do mar, variando com temperatura e altitude.
+</p>
+</div>
+
+<div class="card" id="boom">
+<h2>Boom Sônico</h2>
+<p>
+Ocorre quando uma aeronave ultrapassa Mach 1, gerando ondas de choque no ar.
+</p>
+</div>
+
+</section>
+
+<section id="historia">
+
+<div class="card">
+
+<h2>Linha do Tempo</h2>
+
+<div class="timeline">
+
+<div>
+<h3>1947</h3>
+<p>Bell X-1 quebra a barreira do som.</p>
+</div>
+
+<div>
+<h3>1969</h3>
+<p>Primeiro voo do Concorde.</p>
+</div>
+
+<div>
+<h3>1976</h3>
+<p>Concorde inicia voos comerciais.</p>
+</div>
+
+<div>
+<h3>Atualidade</h3>
+<p>Novos projetos buscam voos supersônicos mais silenciosos.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="galeria">
+
+<div class="card">
+
+<h2>Galeria</h2>
+
+<div class="gallery">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGLYs3hhKgFDNQk0hP_ntHymmvK8YF132_Hg&s">
+<img src="https://hips.hearstapps.com/hmg-prod/images/photograph-of-a-u-s-air-force-lockheed-sr-71a-blackbird-news-photo-513687579-1560367541.jpg?crop=0.91765xw:1xh;center,top&resize=1200:*">
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/British_Airways_Concorde_G-BOAC_03.jpg">
+<img src="https://www.airway.com.br/wp-content/uploads/2023/05/f22_02.jpg">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="velocidades">
+
+<div class="card">
+
+<h2>Comparação de Velocidades</h2>
+
+<table>
+
+<tr>
+<th>Avião</th>
+<th>Velocidade</th>
+<th>Mach</th>
+</tr>
+
+<tr>
+<td>Concorde</td>
+<td>2.179 km/h</td>
+<td>2.04</td>
+</tr>
+
+<tr>
+<td>F-22 Raptor</td>
+<td>2.410 km/h</td>
+<td>2.25</td>
+</tr>
+
+<tr>
+<td>SR-71 Blackbird</td>
+<td>3.540 km/h</td>
+<td>3.3</td>
+</tr>
+
+<tr>
+<td>X-43</td>
+<td>11.265 km/h</td>
+<td>9.6</td>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<footer>
+Projeto escola
+</footer>
+
+</body>
+</html>
